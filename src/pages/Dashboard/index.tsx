@@ -95,7 +95,11 @@ const Dashboard: React.FC = () => {
                       : `${formatValue(transaction.value)}`}
                   </td>
                   <td>{transaction.category.title}</td>
-                  <td>{transaction.created_at}</td>
+                  <td>
+                    {new Date(transaction.created_at).toLocaleDateString(
+                      'pt-BR',
+                    )}
+                  </td>
                 </tr>
               </tbody>
             ))}

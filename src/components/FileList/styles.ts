@@ -39,5 +39,9 @@ export const FileInfo = styled.div`
       color: #999;
       margin-top: 5px;
     }
+
+    &.remove {
+      color: #e83f5b;
+    }
   }
 `;
